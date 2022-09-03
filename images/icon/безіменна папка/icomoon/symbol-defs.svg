@@ -1,0 +1,10 @@
+
+
+
+.label {
+  transition: transform 250ms linear;
+}
+
+.checkbox:checked ~ .label {
+  transform: translateX(20px);
+}
