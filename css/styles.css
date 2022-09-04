@@ -894,7 +894,7 @@ h2 {
   border-radius: 4px;
   outline: none;
 }
-.form-field:focus-within>.form-icon {
+.form-set:focus-within>.form-icon {
   color: var(--accent-color);
 }
 
