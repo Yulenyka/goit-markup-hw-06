@@ -1,10 +1,9 @@
-
-
-
-.label {
-  transition: transform 250ms linear;
-}
-
-.checkbox:checked ~ .label {
-  transform: translateX(20px);
-}
+:root {
+    --primery-text-color: #212121;
+    --fundamental-text-color: #757575;
+    --secondary-text-color: #000000;
+    --sub-text-color: #FFFFFF;
+    --accent-color: #2196F3;
+    --primery-white-color: #F5F5F5;
+    --secondary-white-color: #FFFFFF;
+    --accent-white-color: #2F303A;
