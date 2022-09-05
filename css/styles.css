@@ -223,7 +223,7 @@ h2 {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #757575;
+  color: var(--fundamental-text-color);
   text-decoration: none;
 
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -447,13 +447,13 @@ h2 {
   border-radius: 4px;
 
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .client-link:hover,
 .client-link:focus {
-  color: #2196f3;
-  border: 1px solid #2196f3;
+  color: var(--accent-color);
+  border-color: var(--accent-color);
 }
 
 .client-icon {
@@ -726,14 +726,14 @@ h2 {
   border-radius: 50%;
   cursor: pointer;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-btn:hover {
   color: var(--accent-color);
 }
 .modal-btn:focus {
   color: var(--accent-color);
-  border: 1px solid #2196f3;
+  border-color: var(--accent-color);
   outline: none;
 }
 .close-icon {
@@ -782,11 +782,10 @@ h2 {
   letter-spacing: 0.01em;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
-  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .form-input:focus{
-  border: 1px solid #2196f3;
-  border-radius: 4px;
+  border-color: var(--accent-color);
   outline: none;
 }
 .form-field textarea::placeholder {
@@ -803,7 +802,7 @@ h2 {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   resize: none;
-  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .form-chec {
   padding: 10px 11px 30px 12px;
@@ -820,6 +819,12 @@ h2 {
 .policy {
   color: var(--accent-color);
   text-decoration-line: underline;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.policy:focus {
+  border: 1px solid var(--accent-color);
+  border-radius: 4px;
+  outline: none;
 }
 .checkbox {
   position: absolute;
@@ -888,10 +893,8 @@ h2 {
   transform: translateY(-50%);
 }
 .chec-set:focus-within > .icon,
-.policy:focus,
 .form-field:focus-within > .comment {
-  border: 1px solid #2196f3;
-  border-radius: 4px;
+  border-color: var(--accent-color);
   outline: none;
 }
 .form-set:focus-within > .form-icon {
